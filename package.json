@@ -1,0 +1,50 @@
+{
+  "name": "magpie-zcode-keyring-auth",
+  "version": "0.1.0",
+  "description": "ZCode provider for magpie/OpenCode: sign in with the local ZCode 3.18 keyring or import a JSON token file on machines without ZCode installed.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./server": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "plugin.mjs",
+    "keyring-state.mjs",
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "provider",
+    "zcode",
+    "keyring",
+    "json-token"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netcaty/magpie-zcode-keyring-auth.git"
+  },
+  "homepage": "https://github.com/netcaty/magpie-zcode-keyring-auth#readme",
+  "bugs": {
+    "url": "https://github.com/netcaty/magpie-zcode-keyring-auth/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "magpie": {
+    "maxConcurrency": 3,
+    "icon": "https://raw.githubusercontent.com/netcaty/magpie-zcode-keyring-auth/main/icon.svg"
+  },
+  "dependencies": {
+    "@magpie-community/opencode-zcode-auth": "0.1.68"
+  },
+  "scripts": {
+    "test": "node test/run.cjs"
+  }
+}

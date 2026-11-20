@@ -1,0 +1,12 @@
+{
+  "package": "magpie-zcode-keyring-auth",
+  "name": "ZCode Keyring Auth",
+  "icon": "zcode",
+  "providers": ["zcode"],
+  "community": true,
+  "replaces": "zcode",
+  "summary": {
+    "en": "Wrapper around the official ZCode plugin adding two sign-ins: read ZCode 3.18's OS-keyring credentials on this machine (the upstream app sign-in only reads legacy enc:v1), and import a JSON token file from zcode-sync for machines without ZCode installed. Reuses the upstream key resolution, gift plans and live login-state following.",
+    "zh": "在官方 ZCode 插件上新增两种登录：读取本机 ZCode 3.18 系统钥匙串凭据（官方 app 登录只支持旧版 enc:v1），以及导入 zcode-sync 导出的 JSON token 文件，供未安装 ZCode 的机器使用。沿用官方插件的 key 解析、赠送额度与登录态跟随。"
+  }
+}
